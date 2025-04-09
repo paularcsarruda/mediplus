@@ -2,12 +2,21 @@
 
 Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segunda entrega do Projeto Integrador do Senac/SP.
 
-# Getting Started
+Grupo 22: 
+
+
+## Linguagens, Ferramentas e Frameworks
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vscode](https://img.shields.io/badge/Vscode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+## Getting Started
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-## Step 1: Start Metro
+### Step 1: Start Metro
 
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
@@ -21,7 +30,7 @@ npm start
 yarn start
 ```
 
-## Step 2: Build and run your app
+### Step 2: Build and run your app
 
 With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
@@ -65,7 +74,7 @@ If everything is set up correctly, you should see your new app running in the An
 
 This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-## Step 3: Modify your app
+### Step 3: Modify your app
 
 Now that you have successfully run the app, let's make changes!
 
@@ -76,7 +85,7 @@ When you want to forcefully reload, for example to reset the state of your app, 
 - **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
 - **iOS**: Press <kbd>R</kbd> in iOS Simulator.
 
-## Congratulations! :tada:
+### Congratulations! :tada:
 
 You've successfully run and modified your React Native App. :partying_face:
 
