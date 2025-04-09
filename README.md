@@ -12,7 +12,9 @@ Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segund
 
 ## Telas 
 
-![capture_250409_093418](https://github.com/user-attachments/assets/359023b8-070a-484f-bd7f-d3772a3b847f)
+![1](https://github.com/user-attachments/assets/cc0f999b-6a59-48d6-8be4-c3478d0d05ad)
+![2](https://github.com/user-attachments/assets/cd3e659d-7591-4f8b-9828-cfe71856b014)
+
 
 
 ## Linguagens, Ferramentas e Frameworks
