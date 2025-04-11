@@ -15,7 +15,7 @@ Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segund
 > - Leia Soares da Silva Mendes
 > - Paula Roberta Correa dos Santos Arruda
 
-## Principais Recursos
+## ⚙️Principais Recursos
 > - Cadastro de Medicamentos
 > - Agendamento de Horários
 > - Lembretes e Alarmes
