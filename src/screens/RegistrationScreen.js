@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     backgroundColor: '#8793FF',
     justifyContent: 'center',
-    paddingHorizontal: 30,
+    paddingHorizontal: 10,
     paddingVertical: 40,
   },
   formContainer: {
@@ -150,6 +150,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 45,
     color: '#333',
+    fontSize: 12,
   },
   terms: {
     marginBottom: 15,

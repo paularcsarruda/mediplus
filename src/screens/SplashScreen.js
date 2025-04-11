@@ -65,15 +65,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     logo: {
-        width: 400,
-        height: 280,
+        width: '100%',
+        height: undefined,
+        aspectRatio: 1.6, // 👈 ajusta a proporção conforme necessário (ex: 16:10)
         resizeMode: 'contain',
     },
     text: {
         color: '#FFFFFF',
-        fontWeight: 'bold',
+        fontWeight: '300',
         fontSize: 36,
-        marginTop: 20,
+        marginTop: 25,
         letterSpacing: 1,
     },
 });

@@ -49,19 +49,33 @@ export default function LoginScreen({ navigation }) {
                     </TouchableOpacity>
                 </View>
 
-                <TouchableOpacity style={styles.forgotPassword}>
+                <TouchableOpacity
+                    style={styles.forgotPassword}
+                    onPress={() => navigation.navigate('Recovery')}
+                >
                     <Text style={styles.forgotText}>esqueceu a senha?</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.loginButton}>
+                <TouchableOpacity
+                    style={styles.loginButton}
+                    onPress={() => {
+                        if (email === 'teste@email.com' && password === '123456') {
+                            navigation.navigate('Home');
+                        } else {
+                            alert('E-mail ou senha inválidos!');
+                        }
+                    }}
+                >
                     <Text style={styles.loginText}>entrar</Text>
                 </TouchableOpacity>
 
-                <Text style={styles.registerText}>
-                    Ainda não tem Cadastro?{' '}
-                    <Text style={styles.registerLink}>Cadastre-se.</Text>
-                </Text>
-            </View>
+                <View style={{ alignItems: 'center', marginTop: 10 }}>
+                    <Text style={styles.registerText}>Ainda não tem Cadastro?</Text>
+                    <TouchableOpacity onPress={() => navigation.navigate('Register')}>
+                        <Text style={styles.registerLink}>Cadastre-se.</Text>
+                    </TouchableOpacity>
+                </View>
+            </View> {/* <-- Aqui fechamos corretamente a inputContainer */}
 
             <View style={styles.separatorContainer}>
                 <View style={styles.separator} />
@@ -69,9 +83,10 @@ export default function LoginScreen({ navigation }) {
                 <View style={styles.separator} />
             </View>
 
+            {/* Botão de login com Google */}
             <TouchableOpacity style={styles.googleButton}>
                 <Image
-                    source={require('../img/google.png')} // certifique-se que a logo está aí
+                    source={require('../img/google.png')}
                     style={styles.googleLogo}
                 />
             </TouchableOpacity>
