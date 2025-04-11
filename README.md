@@ -28,6 +28,9 @@ Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segund
 
 ## MockUp - Figma
 
+![1](https://github.com/user-attachments/assets/58480fde-ae21-4b1e-898e-e29ac7541967)
+![2](https://github.com/user-attachments/assets/41b7e253-4c43-49ce-8890-745ce52ff420)
+![3](https://github.com/user-attachments/assets/cb69d47b-2392-4a79-a262-fc1b69554a1c)
 
 
 
