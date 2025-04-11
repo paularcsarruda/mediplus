@@ -7,7 +7,7 @@
 
 Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segunda entrega do Projeto Integrador do Senac/SP.
 
-### Grupo 22
+### 👉 Grupo 22
 
 > - Ana Cláudia de Souza Santos
 > - Carolina Moreira Batatinha de Souza
