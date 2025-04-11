@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/eaae6067-03bb-4b20-b9e4-5ba874e11005" alt="medication-tracking-app-concept" width="400">
+</p>
+
 # Medi+
 
 Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segunda entrega do Projeto Integrador do Senac/SP.
