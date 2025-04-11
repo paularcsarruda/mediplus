@@ -16,6 +16,13 @@ Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segund
 > - Paula Roberta Correa dos Santos Arruda
 
 ## Features
+> - Cadastro de Medicamentos
+> - Agendamento de Horários
+> - Lembretes e Alarmes
+> - Histórico de Consumo
+> - Alertas para Cuidador ou Família
+> - Relatórios para Profissionais de Saúde
+> - Integração com Dispositivos de Saúde
 
 ## Estrutura de Diretórios - MVC (Model-View-Controller)
 
