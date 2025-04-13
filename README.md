@@ -28,8 +28,9 @@ Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segund
 
 ## MockUp - Figma
 
-![1](https://github.com/user-attachments/assets/58480fde-ae21-4b1e-898e-e29ac7541967)
+## Landing Page
 
+## Modelo Físico de Banco de Dados
 
 
 ## Linguagens, Ferramentas e Frameworks
@@ -40,8 +41,6 @@ Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segund
 
 ## Getting Started
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
 ### Step 1: Start Metro
 
@@ -98,8 +97,6 @@ yarn ios
 ```
 
 If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
 ### Você Pode nos Encontrar em:
 
