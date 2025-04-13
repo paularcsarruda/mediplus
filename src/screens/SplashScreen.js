@@ -28,8 +28,9 @@ export default function SplashScreen() {
             }),
         ]).start();
 
+        // 👇 nome da rota, igual ao que está no App.js
         const timer = setTimeout(() => {
-            navigation.replace('Login'); // 👈 nome da rota, igual ao que está no App.js
+            navigation.replace('Login'); 
         }, 4000);
 
         return () => clearTimeout(timer);

@@ -75,7 +75,7 @@ export default function LoginScreen({ navigation }) {
                         <Text style={styles.registerLink}>Cadastre-se.</Text>
                     </TouchableOpacity>
                 </View>
-            </View> {/* <-- Aqui fechamos corretamente a inputContainer */}
+            </View> 
 
             <View style={styles.separatorContainer}>
                 <View style={styles.separator} />

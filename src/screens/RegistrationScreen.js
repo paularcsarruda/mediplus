@@ -128,12 +128,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff22',
     borderRadius: 25,
     padding: 20,
+    alignItems: 'center',
   },
   avatar: {
     alignSelf: 'center',
-    width: 50,
-    height: 50,
-    marginBottom: 20,
+    width: 90,
+    height: 90,
+    marginBottom: 25,
   },
   inputWrapper: {
     flexDirection: 'row',
@@ -175,6 +176,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
     elevation: 4,
+    width: '100%', // 👈 essa linha faz o botão ocupar toda a largura do pai
   },
   registerText: {
     color: '#fff',
