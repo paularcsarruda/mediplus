@@ -79,10 +79,8 @@ export default function AddScreen({ navigation }) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.voltar}>
-        <Ionicons name="arrow-back" size={28} color="#4B0082" />
+        <Ionicons name="chevron-back-circle-outline" size={28} color="#fff" />
       </TouchableOpacity>
-
-      <Text style={styles.titulo}>novo medicamento</Text>
 
       {/* Container para a imagem da câmera */}
       <View style={styles.cameraContainer}>
@@ -92,7 +90,7 @@ export default function AddScreen({ navigation }) {
       </View>
 
       <Text style={styles.label}>medicamento</Text>
-      <TextInput
+      <TextInput 
         placeholder="ex: Paracetamol, Novalgina"
         style={styles.input}
         value={nomeMedicamento}
@@ -133,7 +131,7 @@ export default function AddScreen({ navigation }) {
         </TouchableOpacity>
 
         <View style={styles.durationContainer}>
-          <Text style={{ color: '#4B0082', marginRight: 5 }}>duração</Text>
+          <Text style={{ color: '#4B0082', marginRight: 5 }}></Text>
           <TouchableOpacity onPress={() => setDuracaoDias(Math.max(1, duracaoDias - 1))} style={styles.durationControl}>
             <Ionicons name="remove-outline" size={20} color="#4B0082" />
           </TouchableOpacity>
@@ -202,13 +200,23 @@ export default function AddScreen({ navigation }) {
       )}
 
       <View style={styles.switchContainer}>
-        <Text>criar lembretes de reposição?</Text>
-        <Switch value={lembreteReposicao} onValueChange={setLembreteReposicao} />
+        <Text style={styles.textswitch}>criar lembretes de reposição?</Text>
+        <Switch 
+          value={lembreteReposicao} 
+          onValueChange={setLembreteReposicao} 
+          trackColor={{ false: '#767577', true: '#7121D9' }}
+          thumbColor={lembreteReposicao ? '#fff' : '#f4f3f4'}
+        />
       </View>
 
       <View style={styles.switchContainer}>
-        <Text>enviar notificação para contatos</Text>
-        <Switch value={notificarContatos} onValueChange={setNotificarContatos} />
+        <Text style={styles.textswitch}>enviar notificação para contatos</Text>
+        <Switch 
+          value={notificarContatos} 
+          onValueChange={setNotificarContatos} 
+          trackColor={{ false: '#767577', true: '#7121D9' }}
+          thumbColor={notificarContatos ? '#fff' : '#f4f3f4'}
+        />
       </View>
 
       <TouchableOpacity style={styles.btnCadastrar} onPress={salvarMedicamento}>
@@ -219,38 +227,32 @@ export default function AddScreen({ navigation }) {
         <Text style={styles.btnText}>cancelar</Text>
       </TouchableOpacity>
     </ScrollView>
+
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
-    paddingTop: 50,
-    backgroundColor: '#E6E0F8', // Um tom de roxo mais claro
+    padding: 30,
+    paddingTop: 130,
+    backgroundColor: '#8793FF',
     flexGrow: 1,
   },
   voltar: {
     position: 'absolute',
-    top: 15,
+    top: 55,
     left: 15,
     zIndex: 10,
-  },
-  titulo: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    textAlign: 'center',
-    color: '#4B0082',
   },
   cameraContainer: {
     alignItems: 'center',
     marginBottom: 20,
   },
   cameraPlaceholder: {
-    width: 240, // Largura aumentada
-    height: 160, // Altura aumentada
+    width: 350, 
+    height: 160, 
     backgroundColor: '#F0F0F0',
-    borderRadius: 10,
+    borderRadius: 30,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -261,23 +263,27 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: '#fff',
-    padding: 12,
-    borderRadius: 10,
+    padding: 15,
+    borderRadius: 30,
     marginBottom: 15,
+    paddingLeft: 20,
     color: '#333',
+    fontSize: 12,
   },
   tipoContainer: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
     marginBottom: 15,
   },
   tipoBtn: {
-    flex: 1,
+    width: '48%', // Isso vai garantir que dois botões caibam por linha
     paddingVertical: 10,
-    backgroundColor: '#D8D2E9',
-    borderRadius: 15,
+    backgroundColor: '#fff',
+    borderRadius: 30,
     alignItems: 'center',
-    marginHorizontal: 5,
+    marginVertical: 5, // Adiciona um espaço entre as linhas
+    justifyContent: 'center',
   },
   tipoBtnAtivo: {
     backgroundColor: '#9370DB',
@@ -294,21 +300,24 @@ const styles = StyleSheet.create({
   dateBtn: {
     backgroundColor: '#fff',
     padding: 12,
-    borderRadius: 10,
+    borderRadius: 30,
     flexDirection: 'row',
     alignItems: 'center',
     flex: 0.5,
     marginRight: 10,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    paddingLeft: 25,
+    paddingRight: 40,
   },
   durationContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     flex: 0.5,
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     backgroundColor: '#fff',
-    borderRadius: 10,
+    borderRadius: 30,
     paddingVertical: 10,
+    paddingRight: 20,
   },
   durationControl: {
     paddingHorizontal: 10,
@@ -327,14 +336,14 @@ const styles = StyleSheet.create({
   btnCadastrar: {
     backgroundColor: '#444',
     padding: 15,
-    borderRadius: 15,
+    borderRadius: 30,
     alignItems: 'center',
     marginTop: 20,
   },
   btnCancelar: {
-    backgroundColor: '#E9967A',
+    backgroundColor: '#FD9696',
     padding: 15,
-    borderRadius: 15,
+    borderRadius: 30,
     alignItems: 'center',
     marginTop: 10,
   },
@@ -347,7 +356,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     padding: 12,
-    borderRadius: 10,
+    borderRadius: 30,
     marginBottom: 15,
   },
   alarmsList: {
@@ -362,5 +371,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingVertical: 5,
+  },
+  textswitch: {
+    color: '#fff',
   },
 });

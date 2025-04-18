@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Modal from 'react-native-modal';
 import { Calendar } from 'react-native-calendars';
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {  // Aqui passamos navigation como prop
   const [medicamentos, setMedicamentos] = useState([]);
   const [userName, setUserName] = useState('');
   const [currentDate, setCurrentDate] = useState('');
@@ -178,7 +178,7 @@ export default function HomeScreen() {
           <Ionicons name="pulse-outline" size={26} color="#fff" />
         </TouchableOpacity>
         <TouchableOpacity>
-          <Ionicons name="add" size={30} color="#fff" />
+          <Ionicons name="add" size={30} color="#fff" onPress={() => navigation.navigate('Add')}/>
         </TouchableOpacity>
         <TouchableOpacity>
           <Ionicons name="book-outline" size={26} color="#fff" />
