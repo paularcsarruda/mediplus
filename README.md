@@ -3,8 +3,13 @@
 </p>
 
 # Medi+
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
+<h4 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h4>
+
+![Static Badge](https://img.shields.io/badge/lan%C3%A7amento-junho_2025-blue)
+>
 Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segunda entrega do Projeto Integrador do Senac/SP.
 
 ### 👩‍💻👨‍💻 Desenvolvedores do Grupo 22
