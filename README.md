@@ -8,15 +8,11 @@
 Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segunda entrega do Projeto Integrador do Senac/SP.
 
 ### 👩‍💻👨‍💻 Desenvolvedores do Grupo 22
-
-**- Back-End**
+> - Ana Cláudia de Souza Santos
 > - Carolina Moreira Batatinha de Souza
 > - Igor de Paula Gonçalves
-
-**- Front-End**
 > - Leia Soares da Silva Mendes
 > - Paula Roberta Correa dos Santos Arruda
-> - Ana Cláudia de Souza Santos
 
 ## ⚙️Principais Recursos
 > - Cadastro de Medicamentos
@@ -59,5 +55,21 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
     npx expo start
    ```
+
+## Contribuições
+**- Back-End**
+> - Carolina Moreira Batatinha de Souza
+> - Igor de Paula Gonçalves
+
+**- Front-End**
+> - Leia Soares da Silva Mendes
+> - Paula Roberta Correa dos Santos Arruda
+> - Ana Cláudia de Souza Santos
+
+**- Figma**
+> - Paula Roberta Correa dos Santos Arruda
+
+**- Banco de dados**
+> - Igor de Paula Gonçalves
 
 <a href="#license"><img src="https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000"></a>
