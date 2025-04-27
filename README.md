@@ -7,7 +7,7 @@
 
 Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segunda entrega do Projeto Integrador do Senac/SP.
 
-### 👉 Grupo 22
+### 👩‍💻👨‍💻 Desenvolvedores do Grupo 22
 
 > - Ana Cláudia de Souza Santos
 > - Carolina Moreira Batatinha de Souza
@@ -39,7 +39,7 @@ Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segund
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-# 📁 Acesso ao projeto
+## 📁 Acesso ao projeto
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -57,3 +57,4 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start
    ```
 
+<a href="#license"><img src="https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000"></a>
