@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/95bb6eee-bbd1-4cce-972d-bc9d05b862d6" width="300" />
+</p>
 
 # Medi+
 
