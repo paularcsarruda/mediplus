@@ -9,11 +9,14 @@ Repositório dedicado ao desenvolvimento do Aplicativo Medi+, referente a segund
 
 ### 👩‍💻👨‍💻 Desenvolvedores do Grupo 22
 
-> - Ana Cláudia de Souza Santos
+**- Back-End**
 > - Carolina Moreira Batatinha de Souza
 > - Igor de Paula Gonçalves
+
+**- Front-End**
 > - Leia Soares da Silva Mendes
 > - Paula Roberta Correa dos Santos Arruda
+> - Ana Cláudia de Souza Santos
 
 ## ⚙️Principais Recursos
 > - Cadastro de Medicamentos
