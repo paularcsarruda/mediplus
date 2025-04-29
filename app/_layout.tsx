@@ -60,6 +60,8 @@ function RootLayoutNav() {
           <Stack.Screen name="profile" />
           <Stack.Screen name="registration" />
           <Stack.Screen name="tips" />
+          <Stack.Screen name="my-medicines" />
+          <Stack.Screen name="create-medicine" />
         </Stack>
       </GestureHandlerRootView>
     </ThemeProvider>
