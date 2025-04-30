@@ -6,6 +6,7 @@ import Modal from 'react-native-modal';
 import { Calendar } from 'react-native-calendars';
 import type { tMedicamentos } from '@/types/home';
 import { useRouter } from 'expo-router';
+import Footer from '@/components/Footer';
 
 export default function HomeScreen() {
   const router = useRouter()
@@ -172,12 +173,13 @@ export default function HomeScreen() {
         </View>
       </Modal>
 
+      <Footer />
       {/* Barra de navegação inferior */}
-      <View style={styles.navbar}>
+      {/* <View style={styles.navbar}>
         <TouchableOpacity>
           <Ionicons name="home-outline" size={26} color="#a89eff" />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => router.push('/my-medicines')}>
           <Ionicons name="pulse-outline" size={26} color="#fff" />
         </TouchableOpacity>
         <TouchableOpacity >
@@ -189,7 +191,7 @@ export default function HomeScreen() {
         <TouchableOpacity>
           <Ionicons name="person-outline" size={26} color="#fff" />
         </TouchableOpacity>
-      </View>
+      </View> */}
     </View>
   );
 }
