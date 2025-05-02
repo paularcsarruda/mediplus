@@ -30,7 +30,7 @@ export default function SplashScreen() {
 
       // 👇 nome da rota, igual ao que está no App.js
       const timer = setTimeout(() => {
-        router.push('/login'); 
+        router.push('/LoginScreen'); 
       }, 4000);
 
       return () => clearTimeout(timer);

@@ -109,7 +109,7 @@ export default function RegistrationScreen() {
 
         <Text style={styles.loginRedirect}>
           Já possui Cadastro?{' '}
-          <Text style={styles.link} onPress={() => router.push('/login')}>
+          <Text style={styles.link} onPress={() => router.push('/LoginScreen')}>
             Faça Login
           </Text>
         </Text>

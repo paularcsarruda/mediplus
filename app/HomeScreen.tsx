@@ -4,13 +4,14 @@ import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Modal from 'react-native-modal';
 import { Calendar } from 'react-native-calendars';
-import type { tMedicamentos } from '@/types/home';
 import { useRouter } from 'expo-router';
+import { medicineService } from '../services/medicineService';
+import { Medicamento } from '../services/medicineService';  // 👈 Importar o tipo Medicamento
 import Footer from '@/components/Footer';
 
 export default function HomeScreen() {
-  const router = useRouter()
-  const [medicamentos, setMedicamentos] = useState<tMedicamentos[]>([]);
+  const router = useRouter();
+  const [medicamentos, setMedicamentos] = useState<Medicamento[]>([]);  // Usar Medicamento[] como tipo
   const [userName, setUserName] = useState('');
   const [currentDate, setCurrentDate] = useState('');
   const [currentMonth, setCurrentMonth] = useState('');
@@ -26,7 +27,13 @@ export default function HomeScreen() {
     const today = new Date();
     updateHeader(today); // Atualiza data e mês ao iniciar
     fetchUserName();
+    fetchMedicamentos();  // Chama a função para buscar os medicamentos
   }, []);
+
+  const fetchMedicamentos = async () => {
+    const dadosMedicamentos = await medicineService.listar();
+    setMedicamentos(dadosMedicamentos);
+  };
 
   const updateHeader = (date: Date) => {
     const fullDate = date.toLocaleDateString('pt-BR', {
@@ -127,7 +134,7 @@ export default function HomeScreen() {
                 <Ionicons name="medkit-outline" size={16} color="#555" />
                 <View style={{ marginLeft: 8 }}>
                   <Text style={styles.medName}>{med.nome}</Text>
-                  <Text style={styles.medDetails}>{med.dose}</Text>
+                  <Text style={styles.medDetails}>{med.detalhe}</Text>
                 </View>
               </View>
             </View>
@@ -175,23 +182,23 @@ export default function HomeScreen() {
 
       <Footer />
       {/* Barra de navegação inferior */}
-      {/* <View style={styles.navbar}>
+      <View style={styles.navbar}>
         <TouchableOpacity>
           <Ionicons name="home-outline" size={26} color="#a89eff" />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => router.push('/my-medicines')}>
+        <TouchableOpacity onPress={() => router.push('/MyMedicineScreen')}>
           <Ionicons name="pulse-outline" size={26} color="#fff" />
         </TouchableOpacity>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={() => router.push('/AddMedicineScreen')}>
           <Ionicons name="add" size={30} color="#fff"/>
         </TouchableOpacity>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={() => router.push('/HealthInfoScreen')}>
           <Ionicons name="book-outline" size={26} color="#fff"/>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => router.push('/ProfileScreen')}>
           <Ionicons name="person-outline" size={26} color="#fff" />
         </TouchableOpacity>
-      </View> */}
+      </View>
     </View>
   );
 }

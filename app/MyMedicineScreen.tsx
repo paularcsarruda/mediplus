@@ -36,7 +36,7 @@ export default function MyMedicinesScreen() {
     }
 
     function editarMedicamento(medicamento: Medicamento) {
-        router.push(`/create-medicine?id=${medicamento.id}`);
+        router.push(`./EditMedicineScreen?id=${medicamento.id}`);
     }
 
 
@@ -73,7 +73,6 @@ export default function MyMedicinesScreen() {
                         renderRightActions={() => renderRightActions(item)}
                     >
                         <View style={styles.card}>
-                            <MaterialCommunityIcons name={item.icone as any} size={24} color="#333" />
                             <View style={styles.info}>
                                 <Text style={styles.nome}>{item.nome}</Text>
                                 <Text style={styles.detalhe}>{item.detalhe}</Text>
@@ -108,8 +107,18 @@ export default function MyMedicinesScreen() {
 }
 
 const styles = StyleSheet.create({
-    container: { flex: 1, paddingTop: 60, backgroundColor: '#8793FF', paddingHorizontal: 20 },
-    titulo: { fontSize: 20, color: '#fff', marginBottom: 20 },
+    container: { 
+        flex: 1, 
+        paddingTop: 60, 
+        backgroundColor: '#8793FF', 
+        paddingHorizontal: 20 
+    },
+    titulo: { 
+        color: '#fff', 
+        fontSize: 24, 
+        marginBottom: 30, 
+        alignSelf: 'center' 
+    },
     card: {
         backgroundColor: '#fff',
         borderRadius: 30,
@@ -119,20 +128,66 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
     },
-    info: { flex: 1, marginLeft: 10 },
-    nome: { fontWeight: 'bold', fontSize: 16 },
-    detalhe: { color: '#888' },
-    horario: { alignItems: 'center' },
-    horaTexto: { color: '#9b59b6', fontWeight: 'bold' },
-    actionsContainer: { flexDirection: 'row', height: '100%' },
-    modalOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.5)', justifyContent: 'center', alignItems: 'center' },
-    modalContent: { backgroundColor: '#333', padding: 30, borderRadius: 20, width: 250, alignItems: 'center' },
-    modalTexto: { color: '#fff', fontSize: 18, marginBottom: 20 },
-    modalBotoes: { flexDirection: 'row', gap: 20 },
-    modalBotaoSim: { backgroundColor: '#e57373', padding: 10, borderRadius: 10, width: 80, alignItems: 'center' },
-    modalBotaoNao: { backgroundColor: '#81c784', padding: 10, borderRadius: 10, width: 80, alignItems: 'center' },
-    modalBotaoTexto: { color: '#fff', fontWeight: 'bold' },
-
+    info: { 
+        flex: 1, 
+        marginLeft: 10 
+    },
+    nome: { 
+        fontWeight: 'bold', 
+        fontSize: 16 
+    },
+    detalhe: { 
+        color: '#888' 
+    },
+    horario: { 
+        alignItems: 'center' 
+    },
+    horaTexto: { 
+        color: '#9b59b6', 
+        fontWeight: 'bold' 
+    },
+    actionsContainer: { 
+        flexDirection: 'row', 
+        height: '100%' 
+    },
+    modalOverlay: { 
+        flex: 1, 
+        backgroundColor: 'rgba(0,0,0,0.5)', 
+        justifyContent: 'center', 
+        alignItems: 'center' 
+    },
+    modalContent: { 
+        backgroundColor: '#333', 
+        padding: 30, 
+        borderRadius: 20, 
+        width: 250, 
+        alignItems: 'center'
+    },
+    modalTexto: { 
+        color: '#fff', 
+        fontSize: 18, 
+        marginBottom: 20 
+    },
+    modalBotoes: { 
+        flexDirection: 'row', 
+        gap: 20 
+    },
+    modalBotaoSim: { 
+        backgroundColor: '#e57373', 
+        padding: 10, borderRadius: 10, 
+        width: 80, alignItems: 'center' 
+    },
+    modalBotaoNao: { 
+        backgroundColor: '#81c784', 
+        padding: 10, 
+        borderRadius: 10, 
+        width: 80, 
+        alignItems: 'center' 
+    },
+    modalBotaoTexto: { 
+        color: '#fff', 
+        fontWeight: 'bold' 
+    },
     leftAction: {
         backgroundColor: 'transparent', // Fundo transparente
         justifyContent: 'center',
@@ -166,32 +221,4 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    
-    // leftAction: {
-    //     backgroundColor: '#9b59b6',
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //     borderTopLeftRadius: 30,
-    //     borderBottomLeftRadius: 30,
-    //     borderTopRightRadius: 0,
-    //     borderBottomRightRadius: 0,
-    //     height: '85%',
-    //     marginTop: 5,
-    //     marginBottom: 5,
-    //     width: 70,
-    // },
-    
-    // rightAction: {
-    //     backgroundColor: '#e57373',
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //     borderTopRightRadius: 30,
-    //     borderBottomRightRadius: 30,
-    //     borderTopLeftRadius: 0,
-    //     borderBottomLeftRadius: 0,
-    //     height: '85%',
-    //     marginTop: 5,
-    //     marginBottom: 5,
-    //     width: 70,
-    // },
 });

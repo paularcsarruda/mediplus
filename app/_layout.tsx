@@ -9,15 +9,12 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useColorScheme } from '@/components/useColorScheme';
 
 export {
-  // Catch any errors thrown by the Layout component.
   ErrorBoundary,
 } from 'expo-router';
 
 export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
 };
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -26,7 +23,6 @@ export default function RootLayout() {
     ...FontAwesome.font,
   });
 
-  // Expo Router uses Error Boundaries to catch errors in the navigation tree.
   useEffect(() => {
     if (error) throw error;
   }, [error]);
@@ -51,17 +47,16 @@ function RootLayoutNav() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <GestureHandlerRootView style={{ flex: 1 }}>
         <Stack screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="index" />
-          <Stack.Screen name="login" />
-          <Stack.Screen name="contact" />
-          <Stack.Screen name="home" />
-          <Stack.Screen name="add" />
-          <Stack.Screen name="password-recovery" />
-          <Stack.Screen name="profile" />
-          <Stack.Screen name="registration" />
-          <Stack.Screen name="tips" />
-          <Stack.Screen name="my-medicines" />
-          <Stack.Screen name="create-medicine" />
+          <Stack.Screen name="SplashScreen" />
+          <Stack.Screen name="LoginScreen" />
+          <Stack.Screen name="HomeScreen" />
+          <Stack.Screen name="AddMedicineScreen" />
+          <Stack.Screen name="PasswordRecovery" />
+          <Stack.Screen name="RegistrationScreen" />
+          <Stack.Screen name="MyMedicineScreen" />
+          <Stack.Screen name="ProfileScreen" />
+          <Stack.Screen name="HealthInfoScreen" />
+          <Stack.Screen name="EditMedicineScreen" />
         </Stack>
       </GestureHandlerRootView>
     </ThemeProvider>

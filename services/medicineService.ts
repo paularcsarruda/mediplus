@@ -15,6 +15,7 @@ export type Medicamento = {
     alarme: string;
     lembrarReposicao: boolean;
     notificarContatos: boolean;
+    diasAlarme: string;
   };
   
   let medicamentos: Medicamento[] = [
@@ -33,6 +34,7 @@ export type Medicamento = {
       alarme: '08:00',
       lembrarReposicao: false,
       notificarContatos: false,
+      diasAlarme: null,
     },
     {
       id: '2',
@@ -49,6 +51,7 @@ export type Medicamento = {
       alarme: '08:00',
       lembrarReposicao: true,
       notificarContatos: true,
+      diasAlarme: null,
     },
   ];
   

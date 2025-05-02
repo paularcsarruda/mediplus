@@ -54,7 +54,7 @@ export default function LoginScreen() {
 
                 <TouchableOpacity
                     style={styles.forgotPassword}
-                    onPress={() => router.push('/password-recovery')}
+                    onPress={() => router.push('/PasswordRecovery')}
                 >
                     <Text style={styles.forgotText}>esqueceu a senha?</Text>
                 </TouchableOpacity>
@@ -63,7 +63,7 @@ export default function LoginScreen() {
                     style={styles.loginButton}
                     onPress={() => {
                         if (email === 'teste@email.com' && password === '123456') {
-                           router.push('/home')
+                           router.push('/HomeScreen')
                         } else {
                             alert('E-mail ou senha inválidos!');
                         }
@@ -74,7 +74,7 @@ export default function LoginScreen() {
 
                 <View style={{ alignItems: 'center', marginTop: 10 }}>
                     <Text style={styles.registerText}>Ainda não tem Cadastro?</Text>
-                    <TouchableOpacity onPress={() => router.push('/registration')}>
+                    <TouchableOpacity onPress={() => router.push('/RegistrationScreen')}>
                         <Text style={styles.registerLink}>Cadastre-se.</Text>
                     </TouchableOpacity>
                 </View>

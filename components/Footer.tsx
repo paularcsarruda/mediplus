@@ -9,19 +9,19 @@ export default function Footer() {
     return (
 
         <View style={styles.navbar}>
-            <TouchableOpacity onPress={() => router.push('/home')}>
+            <TouchableOpacity onPress={() => router.push('/HomeScreen')}>
                 <Ionicons name="home-outline" size={26} color="#a89eff" />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => router.push('/my-medicines')}>
+            <TouchableOpacity onPress={() => router.push('/MyMedicineScreen')}>
                 <Ionicons name="pulse-outline" size={26} color="#fff" />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => router.push('/create-medicine')}>
-                <Ionicons name="add" size={30} color="#fff" />
+            <TouchableOpacity onPress={() => router.push('/AddMedicineScreen')}>
+                <Ionicons name="add" size={30} color="#fff"/>
             </TouchableOpacity>
-            <TouchableOpacity >
-                <Ionicons name="book-outline" size={26} color="#fff" />
-            </TouchableOpacity>
-            <TouchableOpacity>
+                <TouchableOpacity onPress={() => router.push('/HealthInfoScreen')}>
+            <Ionicons name="book-outline" size={26} color="#fff"/>
+                </TouchableOpacity>
+            <TouchableOpacity onPress={() => router.push('/ProfileScreen')}>
                 <Ionicons name="person-outline" size={26} color="#fff" />
             </TouchableOpacity>
         </View>
